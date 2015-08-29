@@ -43,6 +43,8 @@ a.toggle:hover .bar {
     transform-style: preserve-3d;
 }
 .contain section {
+    display: flex;
+    flex-direction: column;
     position: absolute;
     background-color: #fff;
     top: 100vh;
@@ -178,15 +180,6 @@ a.toggle:hover .bar {
 }
 
 /* wrapper for scroll container */
-.contain > section {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
 
 .header {
     z-index: 10;
