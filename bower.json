@@ -1,0 +1,7 @@
+{
+    "name": "emMenu",
+    "private": true,
+    "dependencies": {
+        "jquery": "latest"
+    }
+}

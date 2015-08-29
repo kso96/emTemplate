@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class='contain'>
+    <section class='home active'>
+        <div class="header">
+            <h1 class='title'>Home</h1></div>
+        <div class="scroll-container">
+        </div>
+    </section>
+    <section class='about'>
+        <div class="header">
+            <h1 class='title'>About</h1>
+        </div>
+        <div class="scroll-container">
+        </div>
+    </section>
+    <section class='work'>
+        <div class="header">
+            <h1 class='title'>Work</h1>
+        </div>
+        <div class="scroll-container">
+        </div>
+    </section>
+    <section class='contact'>
+        <div class="header">
+            <h1 class='title'>Contact</h1>
+        </div>
+        <div class="scroll-container">
+        </div>
+    </section>
+</div>
+
+<a class='toggle' href='#'>
+    <span class='bar'></span>
+    <span class='bar'></span>
+    <span class='bar'></span>
+</a>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script>
+    $('a.toggle').on('click', function () {
+        $('section').scrollTop(0);
+        $('.contain').toggleClass('active');
+    })
+
+    $('section').on('click', function () {
+        $('section').removeClass('active');
+        $(this).addClass('active');
+        $('.contain').removeClass('active');
+    })
+</script>
+</body>
+</html>
